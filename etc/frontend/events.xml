@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="checkout_cart_product_add_after">
+		<observer instance="Xigen\Discount\Observer\Frontend\Checkout\CartProductAddAfter" name="xigen_discount_observer_frontend_checkout_cartproductaddafter_checkout_cart_product_add_after"/>
+	</event>
+    <event name="checkout_cart_update_items_after">
+		<observer instance="Xigen\Discount\Observer\Frontend\Checkout\CartUpdateItemsAfter" name="xigen_discount_observer_frontend_checkout_cartupdateitemsafter_checkout_cart_update_items_after"/>
+	</event>
+</config>
