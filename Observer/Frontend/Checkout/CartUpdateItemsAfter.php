@@ -67,6 +67,19 @@ class CartUpdateItemsAfter implements \Magento\Framework\Event\ObserverInterface
      */
     protected $_catalogRuleData;
 
+    /**
+     * CartUpdateItemsAfter constructor.
+     * @param \Psr\Log\LoggerInterface $logger
+     * @param \Magento\Catalog\Model\ProductFactory $product
+     * @param \Magento\Customer\Model\Session $customerSession
+     * @param \Magento\Framework\Registry $registry
+     * @param \Magento\Framework\Pricing\PriceCurrencyInterface $priceCurrencyInterface
+     * @param PriceModifier $priceModifier
+     * @param Rule $rule
+     * @param Data $catalogRuleData
+     * @param TimezoneInterface $localeDate
+     * @param StoreManagerInterface $storeManager
+     */
     public function __construct(
         \Psr\Log\LoggerInterface $logger,
         \Magento\Catalog\Model\ProductFactory $product,
