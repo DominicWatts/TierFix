@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Xigen\Discount\Observer\Frontend\Checkout;
 
+// phpcs:disable Generic.Metrics.NestingLevel
+
 use Magento\Catalog\Model\Product as Model;
 use Magento\Catalog\Model\Product\Type;
 use Magento\CatalogRule\Helper\Data;
@@ -88,6 +90,7 @@ class CartProductAddAfter implements \Magento\Framework\Event\ObserverInterface
         $this->_storeManager = $storeManager;
         $this->_catalogRuleData = $catalogRuleData;
     }
+
     /**
      * Execute observer
      *
